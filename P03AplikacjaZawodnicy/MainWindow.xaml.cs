@@ -1,6 +1,6 @@
 ﻿using P03AplikacjaZawodnicy.Operations;
-using P03AplikacjaZawodnicy.ViewModels;
 using P03AplikacjaZawodnicy.Views;
+using P08AplikacjaZawodnicy.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;

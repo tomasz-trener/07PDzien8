@@ -1,8 +1,9 @@
-﻿using P03AplikacjaZawodnicy.Domain;
+﻿using Newtonsoft.Json;
+using P03AplikacjaZawodnicy.Domain;
 using P03AplikacjaZawodnicy.Repositories;
-
-using P03AplikacjaZawodnicy.ViewModels;
+using P03AplikacjaZawodnicy.Tools;
 using P05Biblioteka;
+using P08AplikacjaZawodnicy.ViewModels;
 using PdfSharp.Drawing;
 using PdfSharp.Pdf;
 using System;
@@ -117,5 +118,14 @@ namespace P03AplikacjaZawodnicy.Operations
 
             return z;
         }
+
+        public void WyslijZawodnikaNaServer(ZawodnikVM z)
+        {
+            string jsonString = JsonConvert.SerializeObject(z);
+            // KomunikacjaZServerem ks = new KomunikacjaZServerem();
+            KomunikacjaZServerem.WyslijDane(jsonString);
+        }
+
+        
     }
 }

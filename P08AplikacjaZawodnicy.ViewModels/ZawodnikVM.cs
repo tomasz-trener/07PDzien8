@@ -6,7 +6,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace P03AplikacjaZawodnicy.ViewModels
+namespace P08AplikacjaZawodnicy.ViewModels
 {
     public class ZawodnikVM : ViewModelBase, INotifyPropertyChanged
     {

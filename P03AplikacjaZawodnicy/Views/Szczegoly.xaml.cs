@@ -1,5 +1,6 @@
-﻿using P03AplikacjaZawodnicy.Operations;
-using P03AplikacjaZawodnicy.ViewModels;
+﻿using Newtonsoft.Json;
+using P03AplikacjaZawodnicy.Operations;
+using P08AplikacjaZawodnicy.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -70,11 +71,15 @@ namespace P03AplikacjaZawodnicy.Views
 
             if (trybOkienka== TrybOkienka.Tworzenie)
             {
+                // seraizowac mozemy np do JSON, XML,...
                 zo.DodajZawodnika(zawodnik);
             }else if (trybOkienka== TrybOkienka.Edycja)
             {
                 zawodnik.Id = this.zawodnik.Id;
-                zo.EdytujZawodnika(zawodnik);
+
+                zo.WyslijZawodnikaNaServer(zawodnik);
+               
+               // zo.EdytujZawodnika(zawodnik);
             }
             else
             {
