@@ -23,6 +23,7 @@
             <Button Grid.Column="2"  Margin="10" Content="PDF" Name="PDF" />
             <Button Grid.Column="1" Margin="10" Grid.Row="1" Content="Edytuj" Click="btnEdytuj_Click" Name="btnEdytuj" />
             <Button Grid.Column="2" Margin="10" Grid.Row="1" Content="Usun" Name="btnUsun" />
+            <Button Grid.Row="1" Content="Wykres" Margin="10" Name="btnWykres" Click="btnWykres_Click" />
         </Grid>
         <ListBox x:Name="lbDane" Height="300" >
             <ListBox.ItemTemplate>

@@ -55,5 +55,11 @@ namespace P03AplikacjaZawodnicy
             Szczegoly frmSzczegoly = new Szczegoly(zaznaczony, TrybOkienka.Edycja);
             frmSzczegoly.Show();
         }
+
+        private void btnWykres_Click(object sender, RoutedEventArgs e)
+        {
+            Wykresy w = new Wykresy();
+            w.Show();
+        }
     }
 }
