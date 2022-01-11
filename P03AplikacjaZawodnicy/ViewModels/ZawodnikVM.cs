@@ -44,12 +44,66 @@ namespace P03AplikacjaZawodnicy.ViewModels
                 // poinformuj innych o zmianie
             }
         }
-        public string Kraj { get; set; }
 
-        public DateTime? DataUrodzenia { get; set; }
+        string kraj;
+        public string Kraj
+        {
+            get
+            {
+                return kraj;
+            }
+            set
+            {
+                kraj = value;
+                OnPropertyChanged();
+                // poinformuj innych o zmianie
+            }
+        }
 
-        public int? Wzrost { get; set; }
-        public int? Waga { get; set; }
+        private DateTime? dataUrodzenia;
+
+        public DateTime? DataUrodzenia
+        {
+            get
+            {
+                return dataUrodzenia;
+            }
+            set
+            {
+                dataUrodzenia = value;
+                OnPropertyChanged();
+                // poinformuj innych o zmianie
+            }
+        }
+
+        private int? wzrost;
+        public int? Wzrost {
+            get
+            {
+                return wzrost;
+            }
+            set
+            {
+                wzrost = value;
+                OnPropertyChanged();
+                // poinformuj innych o zmianie
+            }
+        }
+
+        private int? waga;
+        public int? Waga
+        {
+            get
+            {
+                return waga;
+            }
+            set
+            {
+                waga = value;
+                OnPropertyChanged();
+                // poinformuj innych o zmianie
+            }
+        }
 
         public string PodstawoweDane {  get { return Imie + " " + Nazwisko + " " + Kraj; } }
 
