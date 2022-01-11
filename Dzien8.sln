@@ -9,6 +9,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P02Grid", "P02Grid\P02Grid.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P03AplikacjaZawodnicy", "P03AplikacjaZawodnicy\P03AplikacjaZawodnicy.csproj", "{6B175AFB-A36E-415E-A913-3687CFE89EEE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P04Interfejsy", "P04Interfejsy\P04Interfejsy.csproj", "{831A024A-1F31-4176-AD0C-481EBD5BCC34}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P05IntrefejsyWbudowane", "P05IntrefejsyWbudowane\P05IntrefejsyWbudowane.csproj", "{4904B00B-5621-46F5-B45F-F7A0F5CA5D49}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{6B175AFB-A36E-415E-A913-3687CFE89EEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6B175AFB-A36E-415E-A913-3687CFE89EEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6B175AFB-A36E-415E-A913-3687CFE89EEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{831A024A-1F31-4176-AD0C-481EBD5BCC34}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{831A024A-1F31-4176-AD0C-481EBD5BCC34}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{831A024A-1F31-4176-AD0C-481EBD5BCC34}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{831A024A-1F31-4176-AD0C-481EBD5BCC34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4904B00B-5621-46F5-B45F-F7A0F5CA5D49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4904B00B-5621-46F5-B45F-F7A0F5CA5D49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4904B00B-5621-46F5-B45F-F7A0F5CA5D49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4904B00B-5621-46F5-B45F-F7A0F5CA5D49}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

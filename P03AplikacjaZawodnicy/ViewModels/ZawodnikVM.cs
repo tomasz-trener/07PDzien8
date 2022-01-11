@@ -8,14 +8,13 @@ using System.Threading.Tasks;
 
 namespace P03AplikacjaZawodnicy.ViewModels
 {
-    public class ZawodnikVM : INotifyPropertyChanged
+    public class ZawodnikVM : ViewModelBase, INotifyPropertyChanged
     {
         public int? Id { get; set; }
 
         private string imie;
 
-        public event PropertyChangedEventHandler PropertyChanged;
-
+  
         public string Imie { 
             get 
             { 
@@ -107,9 +106,6 @@ namespace P03AplikacjaZawodnicy.ViewModels
 
         public string PodstawoweDane {  get { return Imie + " " + Nazwisko + " " + Kraj; } }
 
-        private void OnPropertyChanged([CallerMemberName]string name=null)
-        {
-            PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(name));
-        }
+        
     }
 }

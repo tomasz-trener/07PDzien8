@@ -39,7 +39,10 @@ namespace P03AplikacjaZawodnicy.Views
         public Szczegoly(ZawodnikVM zaznaczony, TrybOkienka trybOkienka) : this()
         {
             this.trybOkienka = trybOkienka;
-            zawodnik = zaznaczony;
+            ZawodnicyOperation zo = new ZawodnicyOperation();
+            zawodnik = zo.PodajZawodnika((int)zaznaczony.Id);
+
+            //zawodnik = zaznaczony; w tym momencie zmienimy także to co siedzi w listboxie
 
             // bindowanie zawodnika z całym okienkiem, dzięki temu moge korzystać z bindowania w xaml
             this.DataContext = zawodnik;

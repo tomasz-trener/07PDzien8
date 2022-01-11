@@ -74,6 +74,7 @@
       <DependentUpon>ModelBazyDanych.dbml</DependentUpon>
     </Compile>
     <Compile Include="Repositories\ZawodnicyRepository.cs" />
+    <Compile Include="ViewModels\ViewModelBase.cs" />
     <Compile Include="ViewModels\ZawodnikVM.cs" />
     <Compile Include="Views\Szczegoly.xaml.cs">
       <DependentUpon>Szczegoly.xaml</DependentUpon>
