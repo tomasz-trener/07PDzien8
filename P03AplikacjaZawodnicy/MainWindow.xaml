@@ -31,9 +31,9 @@
                     <TextBlock Text="{Binding PodstawoweDane}"></TextBlock>
                 </DataTemplate>
             </ListBox.ItemTemplate>
-            
         </ListBox>
     </StackPanel>
-    
-    
+
+    <!--Szkolenia: szkolenia@tomaszles.pl-->
+
 </Window>
