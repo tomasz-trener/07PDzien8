@@ -21,10 +21,17 @@
             <Button Content="Wczytaj" Margin="10" Name="btnWczytaj" Click="btnWczytaj_Click" />
             <Button Grid.Column="1" Margin="10" Content="Dodaj" Name="btnDodaj" Click="btnDodaj_Click" />
             <Button Grid.Column="2"  Margin="10" Content="PDF" Name="PDF" />
-            <Button Grid.Column="1" Margin="10" Grid.Row="1" Content="Edytuj" Name="btnEdytuj" />
+            <Button Grid.Column="1" Margin="10" Grid.Row="1" Content="Edytuj" Click="btnEdytuj_Click" Name="btnEdytuj" />
             <Button Grid.Column="2" Margin="10" Grid.Row="1" Content="Usun" Name="btnUsun" />
         </Grid>
-        <ListBox x:Name="lbDane" Height="300" />
+        <ListBox x:Name="lbDane" Height="300" >
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding PodstawoweDane}"></TextBlock>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+            
+        </ListBox>
     </StackPanel>
     
     

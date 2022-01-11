@@ -1,4 +1,5 @@
 ﻿using P03AplikacjaZawodnicy.Operations;
+using P03AplikacjaZawodnicy.ViewModels;
 using P03AplikacjaZawodnicy.Views;
 using System;
 using System.Collections.Generic;
@@ -32,15 +33,26 @@ namespace P03AplikacjaZawodnicy
             ZawodnicyOperation zo = new ZawodnicyOperation();
             var zawodnicy = zo.PodajZawodnikow();
 
-            foreach (var z in zawodnicy)
-            {
-                lbDane.Items.Add(z.PodstawoweDane);
-            }
+            // sposób bez bindowania danych
+            //foreach (var z in zawodnicy) 
+            //{
+            //    lbDane.Items.Add(z.PodstawoweDane);
+            //}
+
+            lbDane.ItemsSource = zawodnicy;
         }
 
         private void btnDodaj_Click(object sender, RoutedEventArgs e)
         {
             Szczegoly frmSzczegoly = new Szczegoly();
+            frmSzczegoly.Show();
+        }
+
+        private void btnEdytuj_Click(object sender, RoutedEventArgs e)
+        {
+            var zaznaczony = (ZawodnikVM)lbDane.SelectedItem;
+           // MessageBox.Show(zaznaczony.Id.ToString());
+            Szczegoly frmSzczegoly = new Szczegoly(zaznaczony, TrybOkienka.Edycja);
             frmSzczegoly.Show();
         }
     }
