@@ -54,14 +54,14 @@ namespace P03AplikacjaZawodnicy.Views
 
         private void btnZapisz_Click(object sender, RoutedEventArgs e)
         {
-            ZawodnikVM zawodnik = new ZawodnikVM();
-            
-            zawodnik.Imie = txtImie.Text;
-            zawodnik.Nazwisko = txtNazwisko.Text;
-            zawodnik.Kraj= txtKraj.Text;
-            zawodnik.DataUrodzenia = dpDataUr.SelectedDate;
-            zawodnik.Waga= Convert.ToInt32(txtWaga.Text);
-            zawodnik.Wzrost = Convert.ToInt32(txtWzrost.Text);
+            //tradycyjne podjescie
+            //ZawodnikVM zawodnik = new ZawodnikVM();
+            //zawodnik.Imie = txtImie.Text;
+            //zawodnik.Nazwisko = txtNazwisko.Text;
+            //zawodnik.Kraj= txtKraj.Text;
+            //zawodnik.DataUrodzenia = dpDataUr.SelectedDate;
+            //zawodnik.Waga= Convert.ToInt32(txtWaga.Text);
+            //zawodnik.Wzrost = Convert.ToInt32(txtWzrost.Text);
 
             ZawodnicyOperation zo = new ZawodnicyOperation();
 
